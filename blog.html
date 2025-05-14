@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniBlog | Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mini<span>Blog</span></h1>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Blog Posts</h2>
+            <p>Read our latest articles and stay updated</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-layout">
+                    <div class="blog-posts" id="blogPosts">
+                        <!-- Blog posts will be loaded via JavaScript -->
+                    </div>
+                    <aside class="sidebar">
+                        <div class="sidebar-widget search-widget">
+                            <h3>Search</h3>
+                            <form id="searchForm">
+                                <input type="text" id="searchInput" placeholder="Search posts...">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="sidebar-widget categories-widget">
+                            <h3>Categories</h3>
+                            <ul id="categoriesList">
+                                <!-- Categories will be loaded via JavaScript -->
+                            </ul>
+                        </div>
+                        <div class="sidebar-widget recent-posts-widget">
+                            <h3>Recent Posts</h3>
+                            <ul id="recentPostsList">
+                                <!-- Recent posts will be loaded via JavaScript -->
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="pagination" id="pagination">
+                    <!-- Pagination will be handled via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Mini<span>Blog</span></h3>
+                    <p>A simple blog demonstrating HTML, CSS, and JavaScript skills.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MiniBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
