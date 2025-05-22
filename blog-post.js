@@ -820,10 +820,8 @@ function displayPostTags(post) {
     if (!postTags || !post || !post.tags) return;
 
     postTags.innerHTML = `
-        <h4>Tags:</h4>
         <div class="tags-list">
             ${post.tags.map(tag => `
-                <span class="tag">${tag}</span>
             `).join('')}
         </div>
     `;
@@ -1025,11 +1023,6 @@ function displayRelatedPosts(currentPost) {
 
     relatedPosts.innerHTML = related.map(post => `
         <article class="post-card">
-            <div class="post-card-image">
-                <a href="blog-post.html?id=${post.id}">
-                    <img src="${post.image}" alt="${post.title}">
-                </a>
-            </div>
             <div class="post-card-content">
                 <h4 class="post-title">
                     <a href="blog-post.html?id=${post.id}">${post.title}</a>

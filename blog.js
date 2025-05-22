@@ -6,11 +6,9 @@ const blogPosts = [
         excerpt: "Learn the basics of HTML5 and how to structure your web pages properly.",
         content: "Full content of the HTML5 article goes here...",
         author: "Alex Johnson",
-        authorImage: "img/team-1.jpg",
         date: "May 10, 2025",
         category: "Web Development",
         tags: ["HTML5", "Frontend", "Beginner"],
-        image: "img/post-1.jpg",
         comments: 8
     },
     {
@@ -19,11 +17,9 @@ const blogPosts = [
         excerpt: "Understand the differences between CSS Grid and Flexbox and when to use each.",
         content: "Full content of the CSS layout comparison article goes here...",
         author: "Samantha Lee",
-        authorImage: "img/team-2.jpg",
         date: "May 7, 2025",
         category: "CSS",
         tags: ["CSS", "Layout", "Design"],
-        image: "img/post-2.jpg",
         comments: 12
     },
     {
@@ -32,11 +28,9 @@ const blogPosts = [
         excerpt: "Master asynchronous JavaScript with a deep dive into Promises.",
         content: "Full content of the JavaScript Promises article goes here...",
         author: "Michael Brown",
-        authorImage: "img/team-3.jpg",
         date: "May 5, 2025",
         category: "JavaScript",
         tags: ["JavaScript", "Async", "Intermediate"],
-        image: "img/post-3.jpg",
         comments: 5
     },
     {
@@ -45,11 +39,9 @@ const blogPosts = [
         excerpt: "Learn how to create websites that look great on any device.",
         content: "Full content of the responsive design article goes here...",
         author: "Alex Johnson",
-        authorImage: "img/team-1.jpg",
         date: "May 3, 2025",
         category: "Web Design",
         tags: ["CSS", "Responsive", "Mobile"],
-        image: "img/post-4.jpg",
         comments: 9
     },
     {
@@ -58,11 +50,9 @@ const blogPosts = [
         excerpt: "Make your websites accessible to everyone with these essential tips.",
         content: "Full content of the accessibility article goes here...",
         author: "Samantha Lee",
-        authorImage: "img/team-2.jpg",
         date: "April 28, 2025",
         category: "Web Development",
         tags: ["Accessibility", "ARIA", "UX"],
-        image: "img/post-5.jpg",
         comments: 3
     },
     {
@@ -71,11 +61,9 @@ const blogPosts = [
         excerpt: "Learn how to integrate third-party APIs into your web applications.",
         content: "Full content of the API integration article goes here...",
         author: "Michael Brown",
-        authorImage: "img/team-3.jpg",
         date: "April 25, 2025",
         category: "JavaScript",
         tags: ["API", "JavaScript", "Backend"],
-        image: "img/post-6.jpg",
         comments: 7
     }
 ];
@@ -181,9 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.innerHTML = `
                 <a href="blog-post.html?id=${post.id}">
-                    <div class="recent-post-image">
-                        <img src="${post.image}" alt="${post.title}">
-                    </div>
                     <div class="recent-post-info">
                         <h4>${post.title}</h4>
                         <span class="recent-post-date">${post.date}</span>

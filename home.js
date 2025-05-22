@@ -112,9 +112,6 @@ function addTestimonialsSection() {
                             <p class="testimonial-text">"${testimonial.text}"</p>
                         </div>
                         <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="${testimonial.avatar}" alt="${testimonial.name}" onerror="this.innerHTML = '${testimonial.name.charAt(0)}'">
-                            </div>
                             <div class="author-info">
                                 <h4 class="author-name">${testimonial.name}</h4>
                                 <p class="author-title">${testimonial.role}, ${testimonial.company}</p>
@@ -218,9 +215,6 @@ function addAboutSection() {
                         </div>
                     </div>
                     <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
-                </div>
-                <div class="about-image">
-                    <img src="images/about-image.jpg" alt="Web Development Process" onerror="this.src='images/placeholder.jpg'">
                 </div>
             </div>
         </div>
