@@ -4,7 +4,7 @@
 This is a responsive multi-page blog website built with HTML5, CSS3, and JavaScript. The website features a modern design with interactive elements and is fully responsive across various screen sizes.
 
 ## Live Demo
-[View the live demo here](#) <!-- Add your deployment URL here once deployed -->
+[View the live demo here](https://angiegichane.github.io/Blog-Website/)
 
 ## Features
 - Responsive design that works on mobile, tablet, and desktop devices
